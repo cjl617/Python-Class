@@ -13,7 +13,7 @@ try:
     print("数据集加载成功！")
 except Exception as e:
     print(f"在线加载失败，请检查网络。错误信息: {e}")
-    # 如果连不上网，这里抛出异常停止运行，避免后面带着空 df 去跑模型
+    # 如果连不上网，抛出异常停止运行，避免后面带着空 df 去跑模型
     raise RuntimeError("无法获取数据，请确保网络通畅，或手动下载 Carseats.csv 文件。")
 
 # 查看前几行
